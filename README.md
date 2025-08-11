@@ -40,6 +40,10 @@ Optimized Power Case (4-bit):
 
 Observation: By reducing from 8-bit to 4-bit, both internal logic switching and I/O capacitance load per cycle dropped, lowering power drastically.
 
+The 4-bit optimized implementation achieves a total on-chip power of just 3.749 W, representing a substantial reduction in energy usage compared to the 8-bit design. Dynamic power is still the dominant factor at 98% (3.660 W), but the overall magnitude is much smaller due to reduced data width, fewer active transitions, and lighter switching loads. Static power is 0.089 W (2%), showing a similar low-leakage characteristic.
+Here, I/O power still forms the largest portion at 93% (3.420 W), but because the total scale is lower, it does not impose as much thermal or energy strain. Logic power is drastically reduced to 0.096 W (3%), highlighting the benefit of minimized logic complexity in the smaller architecture. The junction temperature is 32.1°C, a significant improvement, allowing operation without aggressive cooling measures.
+This lower-power profile makes the 4-bit design ideal for embedded, portable, and battery-powered applications, where efficiency and minimal heat generation are critical.
+
 # 8-bit Multiplier Power Analysis
 ![4-bit Multiplier Schematic](8pa.png)
 
@@ -60,6 +64,9 @@ Higher Power Case (8-bit):
 
 Observation: The huge I/O power means either high output loading, high toggle rates, or large capacitances. The wider 8-bit interface increases switching per cycle compared to 4-bit.
 
+The 8-bit implementation demonstrates significantly higher power consumption, with a total on-chip power of 13.761 W. The dynamic power component dominates at 99% (13.635 W), indicating that most of the energy is consumed during switching and signal transitions due to the larger data width and higher switching activity. Static power is relatively minimal at 0.126 W (1%), suggesting that leakage currents are not the primary source of power loss.
+Breaking down the dynamic power further, I/O power accounts for a massive 86% (11.677 W), revealing that external signal driving and interfacing are the main contributors to the high power usage. Logic power is 6% (0.872 W), meaning computation itself consumes a smaller fraction compared to data transfer. The junction temperature reaches 50.9°C, showing that thermal management becomes more critical at this scale.
+This high power profile makes the 8-bit design less suitable for low-power applications, but it may still be justified in performance-driven systems where speed and throughput outweigh energy efficiency.
 
 ## Conclusion
 The optimized (4-bit) implementation achieves a **massive reduction in power consumption** and operating temperature compared to the 8-bit design.  
