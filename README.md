@@ -61,7 +61,7 @@ Higher Power Case (8-bit):
 Observation: The huge I/O power means either high output loading, high toggle rates, or large capacitances. The wider 8-bit interface increases switching per cycle compared to 4-bit.
 
 
-## 🔍 Conclusion
+## Conclusion
 The optimized (4-bit) implementation achieves a **massive reduction in power consumption** and operating temperature compared to the 8-bit design.  
 Key improvements include:
 - **~72.8% lower total power**
