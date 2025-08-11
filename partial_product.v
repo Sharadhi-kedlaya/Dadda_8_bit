@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: NMAMIT
-// Engineer: Sharadhi R K
-// 
-// Create Date:    19:36:29 06/14/2019 
-// Design Name: 
-// Module Name:    partial_product 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
+
 module partial_product(a,b,p0,p1,p2,p3,p4,p5,p6,p7);
 
 input [7:0] b;
@@ -32,3 +14,4 @@ assign p5 = b[5] & a;
 assign p6 = b[6] & a;
 assign p7 = b[7] & a;
 endmodule
+
