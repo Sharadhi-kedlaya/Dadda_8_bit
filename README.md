@@ -81,7 +81,7 @@ This makes the design far more efficient and well-suited for **low-power, therma
 
 The following results are obtained from **Cadence RTL Compiler / Genus Power Analysis**, comparing three technology nodes (**180nm, 90nm, and 45nm**) under different operating corners (Slow, Typical, Fast).
 
-| Node      | Mode    | Leakage Power | Internal Power | Net Power | Switching Power | Area (µm²) | Gate Count |
+| Node      | Mode    | Leakage Power (nW) | Internal Power (nW) | Net Power (nW) | Switching Power (nW) | Area (µm²) | Gate Count |
 | --------- | ------- | ------------- | -------------- | --------- | --------------- | ---------- | ---------- |
 | **180nm** | Slow    | 45.377        | 26294.409      | 7042.284  | 33336.693       | 918.86     | 28         |
 |           | Typical | 6.285         | 33620.146      | 8849.716  | 42469.863       | 918.086    | 28         |
