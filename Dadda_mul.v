@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    11:31:35 06/17/2019 
-// Design Name: 
-// Module Name:    Dadda_mul 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
+
 module Dedda_mul(a,b,op);
 
 input [7:0] a,b;
@@ -99,3 +81,4 @@ FA f47(s612,c611,c712,s713,c713);
 FA f48(p7[7],c612,c713,s714,c714);
 assign op = {c714,s714,s713,s712,s711,s710,s79,s78,s77,s76,s75,s74,s73,s72,s71,p0[0]};
 endmodule
+
