@@ -18,7 +18,7 @@ partial_product pp7(a[6],b,p6[0],p6[1],p6[2],p6[3],p6[4],p6[5],p6[6],p6[7]);
 partial_product pp8(a[7],b,p7[0],p7[1],p7[2],p7[3],p7[4],p7[5],p7[6],p7[7]);
 
 // ---------------- Intermediate Wires ----------------
-// Instead of s11, c11, ... we group by stage
+
 wire [14:1] s1, c1;   // Level 1
 wire [15:1] s2, c2;   // Level 2
 wire [10:1] s3, c3;   // Level 3
@@ -100,3 +100,4 @@ FA f47(s4[12],c4[11],c5[12],s5[13],c5[13]);
              s5[3],s5[2],s5[1],p0[0]};
 
 endmodule
+
