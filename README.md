@@ -7,8 +7,6 @@ The design was synthesized, implemented, and analyzed using Xilinx Vivado 2018.1
 
 -RTL Analysis – Verification of schematic and logic structure.
 
--Implementation – Placement and routing of design.
-
 -Power & Utilization Analysis – power usage estimation.
 
 -Technology Node Comparison – Power/area trade-offs for 180nm, 90nm, and 45nm.
